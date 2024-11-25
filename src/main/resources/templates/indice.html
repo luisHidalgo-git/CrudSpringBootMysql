@@ -1,4 +1,5 @@
 <h1>Inicio</h1>
+<a th:href="@{/anexar}">Agregar</a>
 <div th:if="${individuos != null and !individuos.isEmpty()}">
     <table border="2">
         <tr>
@@ -7,6 +8,8 @@
             <th>Correo</th>
             <th>Telefono</th>
             <th>Edad</th>
+            <th>Modificar</th>
+            <th>Eliminar</th>
         </tr>
         <tr th:each="individuo : ${individuos}">
             <td th:text="${individuo.nombre}"></td>
@@ -14,6 +17,8 @@
             <td th:text="${individuo.correo}"></td>
             <td th:text="${individuo.telefono}"></td>
             <td th:text="${individuo.edad}"></td>
+            <td><a th:href="@{/cambiar/} + ${individuo.id_individuo}" th:text="Cambiar"></a></td>
+            <td><a th:href="@{/borrar/} + ${individuo.id_individuo}" th:text="Borrar"></a></td>
         </tr>
     </table>
 </div>
