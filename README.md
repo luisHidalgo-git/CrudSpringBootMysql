@@ -1,2 +1,1 @@
-token:
-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
+mvn spring-boot:run
