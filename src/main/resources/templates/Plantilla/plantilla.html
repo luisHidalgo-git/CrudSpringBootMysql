@@ -13,6 +13,9 @@
                 <a th:href="@{/(lang=es)}">ES</a> -
                 <a th:href="@{/(lang=en)}">EN</a> -
                 <span> [[#{pagina.footer}]] <a href="https://github.com/luisHidalgo-git">luisHidalgo-git</a></span>
+                <form method="POST" th:action="@{/logout}">
+                    <a href="#" onclick="this.parentNode.submit();">Salida</a>
+                </form>
             </div>
         </footer>
     </body>
