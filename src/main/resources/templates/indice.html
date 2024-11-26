@@ -1,27 +1,33 @@
-<h1>Inicio</h1>
-<a th:href="@{/anexar}">Agregar</a>
-<div th:if="${individuos != null and !individuos.isEmpty()}">
-    <table border="2">
-        <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Correo</th>
-            <th>Telefono</th>
-            <th>Edad</th>
-            <th>Modificar</th>
-            <th>Eliminar</th>
-        </tr>
-        <tr th:each="individuo : ${individuos}">
-            <td th:text="${individuo.nombre}"></td>
-            <td th:text="${individuo.apellido}"></td>
-            <td th:text="${individuo.correo}"></td>
-            <td th:text="${individuo.telefono}"></td>
-            <td th:text="${individuo.edad}"></td>
-            <td><a th:href="@{/cambiar/} + ${individuo.id_individuo}" th:text="Cambiar"></a></td>
-            <td><a th:href="@{/borrar/} + ${individuo.id_individuo}" th:text="Borrar"></a></td>
-        </tr>
-    </table>
-</div>
-<div th:if="${individuos == null or individuos.isEmpty()}">
-    La lista no tiene Registros
-</div>
+<html>
+    <title>Página de inicio</title>
+    <body>
+        <header th:replace="Plantilla/plantilla :: header"></header>
+        <a th:href="@{/anexar}">[[#{individuo.anexar}]]</a>
+        <div th:if="${individuos != null and !individuos.isEmpty()}">
+            <table border="2">
+                <tr>
+                    <th>[[#{individuo.nombre}]]</th>
+                    <th>[[#{individuo.apellido}]]</th>
+                    <th>[[#{individuo.correo}]]</th>
+                    <th>[[#{individuo.telefono}]]</th>
+                    <th>[[#{individuo.edad}]]</th>
+                    <th>[[#{boton.anexar}]]</th>
+                    <th>[[#{boton.borrar}]]</th>
+                </tr>
+                <tr th:each="individuo : ${individuos}">
+                    <td th:text="${individuo.nombre}"></td>
+                    <td th:text="${individuo.apellido}"></td>
+                    <td th:text="${individuo.correo}"></td>
+                    <td th:text="${individuo.telefono}"></td>
+                    <td th:text="${individuo.edad}"></td>
+                    <td><a th:href="@{/cambiar/} + ${individuo.id_individuo}" th:text="Cambiar"></a></td>
+                    <td><a th:href="@{/borrar/} + ${individuo.id_individuo}" th:text="Borrar"></a></td>
+                </tr>
+            </table>
+        </div>
+        <div th:if="${individuos == null or individuos.isEmpty()}">
+            La lista no tiene Registros
+        </div>
+        <footer th:replace="Plantilla/plantilla :: footer"></footer>
+    </body>
+</html>

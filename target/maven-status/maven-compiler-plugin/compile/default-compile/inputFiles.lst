@@ -1,4 +1,6 @@
 /home/luis/Documents/Netbeans/CrudSpringBoot/src/main/java/com/example/HolaSpringApplication.java
 /home/luis/Documents/Netbeans/CrudSpringBoot/src/main/java/com/example/dao/IndividuoDao.java
 /home/luis/Documents/Netbeans/CrudSpringBoot/src/main/java/com/example/domain/Individuo.java
+/home/luis/Documents/Netbeans/CrudSpringBoot/src/main/java/com/example/servicio/IndividuoServicio.java
+/home/luis/Documents/Netbeans/CrudSpringBoot/src/main/java/com/example/servicio/IndividuoServicioImp.java
 /home/luis/Documents/Netbeans/CrudSpringBoot/src/main/java/com/example/web/ControladorREST.java

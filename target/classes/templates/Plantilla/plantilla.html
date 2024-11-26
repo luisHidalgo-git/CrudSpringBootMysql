@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Plantillas</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header th:fragment="header">
+            <h1 th:text="#{pagina.titulo}">Control Consumidor</h1>
+        </header>
+        <footer th:fragment="footer">
+            <p> [[#{pagina.footer}]] <a href="http://www.bdc.com.mx">BrainDataCenter.com.mx</a></p>
+        </footer>
+    </body>
+</html>
