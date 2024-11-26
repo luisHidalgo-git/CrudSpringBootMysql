@@ -3,7 +3,6 @@ package com.example.servicio;
 import com.example.dao.IndividuoDao;
 import com.example.domain.Individuo;
 import java.util.List;
-import java.util.Optional;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.stereotype.*;
 import org.springframework.transaction.annotation.Transactional;

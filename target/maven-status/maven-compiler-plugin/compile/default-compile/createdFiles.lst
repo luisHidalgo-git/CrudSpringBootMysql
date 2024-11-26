@@ -1,6 +1,7 @@
+com/example/servicio/IndividuoServicioImp.class
+com/example/web/ControladorREST.class
 com/example/servicio/IndividuoServicio.class
 com/example/HolaSpringApplication.class
 com/example/domain/Individuo.class
-com/example/servicio/IndividuoServicioImp.class
 com/example/dao/IndividuoDao.class
-com/example/web/ControladorREST.class
+com/example/web/WebConfig.class

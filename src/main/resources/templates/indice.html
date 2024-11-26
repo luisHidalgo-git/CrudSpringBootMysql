@@ -20,8 +20,8 @@
                     <td th:text="${individuo.correo}"></td>
                     <td th:text="${individuo.telefono}"></td>
                     <td th:text="${individuo.edad}"></td>
-                    <td><a th:href="@{/cambiar/} + ${individuo.id_individuo}" th:text="Cambiar"></a></td>
-                    <td><a th:href="@{/borrar/} + ${individuo.id_individuo}" th:text="Borrar"></a></td>
+                    <td><a th:href="@{/cambiar/} + ${individuo.id_individuo}" th:text="#{boton.modificar}"></a></td>
+                    <td><a th:href="@{/borrar/} + ${individuo.id_individuo}" th:text="#{boton.borrar}"></a></td>
                 </tr>
             </table>
         </div>

@@ -8,7 +8,12 @@
             <h1 th:text="#{pagina.titulo}">Control Consumidor</h1>
         </header>
         <footer th:fragment="footer">
-            <p> [[#{pagina.footer}]] <a href="http://www.bdc.com.mx">BrainDataCenter.com.mx</a></p>
+            <div>
+                </br>
+                <a th:href="@{/(lang=es)}">ES</a> -
+                <a th:href="@{/(lang=en)}">EN</a> -
+                <span> [[#{pagina.footer}]] <a href="https://github.com/luisHidalgo-git">luisHidalgo-git</a></span>
+            </div>
         </footer>
     </body>
 </html>
