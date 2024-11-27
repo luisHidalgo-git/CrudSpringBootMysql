@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.HolaSpring.HolaSpringApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.24 s -- in com.example.HolaSpring.HolaSpringApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 41.12 s -- in com.example.HolaSpring.HolaSpringApplicationTests

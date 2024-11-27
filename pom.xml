@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>CrudSpringBoot</artifactId>
+    <artifactId>CrudSpringBootMysql</artifactId>
     <version>1.0</version>
-    <name>CrudSpringBoot</name>
+    <name>CrudSpringBootMysql</name>
     <description>Demo project for Spring Boot</description>
     <url/>
     <licenses>
